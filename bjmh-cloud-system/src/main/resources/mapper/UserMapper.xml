@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- namespace必须指向Dao接口 -->
+<mapper namespace="com.bjmh.cloud.system.user.mapper.UserMapper">
+	
+	<!-- 查询所有数据 -->
+	<select id="queryAllUser" resultType="com.bjmh.cloud.system.user.entity.User">
+		SELECT
+			t.id AS id,
+			t.account AS account,
+			t.user_name AS userName
+		FROM
+			sys_user t
+	</select>
+</mapper>  

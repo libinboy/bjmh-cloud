@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: bjmh-cloud-ui #表示应用名称
+server:
+  port: 8850
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8888/eureka/

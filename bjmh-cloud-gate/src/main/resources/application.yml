@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: bjmh-cloud-gate #表示应用名称
+server:
+  port: 8870
+zuul:
+  routes:
+    system:
+      path: /system/**
+      serviceId: bjmh-cloud-system
+    ui:
+      path: /admin/**
+      serviceId: bjmh-cloud-ui
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8888/eureka/
